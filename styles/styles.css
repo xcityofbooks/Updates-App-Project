@@ -1,0 +1,280 @@
+:root {
+  --dark: #374151;
+  --darker: #1f2937;
+  --darkest: #111827;
+  --light: #eee;
+  --gray: #6b7280;
+  --pink: #ec4899;
+  --purple: #8b5cf6;
+  --cedar: #242e3a;
+  --bluewood: #2f4555;
+  --fiddler: #59948c;
+  --google: #202125;
+  --flashwhite: #f2f1f5;
+  --haiti: #2c2c38;
+  --blackrussian: #21212d;
+  --bellflower: #6561a7;
+  --silverfox: #bcbcc4;
+  --blackrock: #2c2c3c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--blackrock);
+}
+
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 75px;
+  height: 100%;
+  background: var(--blackrussian);
+  transition: all 0.4s;
+}
+
+body.open .sidebar {
+  width: 240px;
+}
+
+.sidebar-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  height: 68px;
+  padding: 0 1.25rem 0 0;
+  background: rgba(0, 0, 0, 0.1);
+  border-left: 3px solid transparent;
+  transition: all 0.4s;
+}
+
+.sidebar-header:hover {
+  border-left: 3px solid #bdbdbd;
+}
+
+.sidebar-btn {
+  width: 70px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+}
+
+.sidebar-btn > i,
+body.open .sidebar-btn > i {
+  font-size: 25px;
+  color: #f9f9f9;
+  transition: all 0.4s;
+}
+
+.sidebar-btn:hover > i,
+body.open .sidebar-btn:hover > i {
+  color: #bdbdbd;
+}
+
+.sidebar-logo {
+  height: 30px;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+body.open .sidebar-logo {
+  opacity: 1;
+  transition: all 0.4s;
+}
+
+.sidebar-menu {
+  display: grid;
+}
+
+.sidebar-menu > button {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  height: 55px;
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 1;
+  padding: 0 22px;
+  border-left: 3px solid transparent;
+  transition: all 0.4s;
+}
+
+.sidebar-menu > button:hover {
+  border-left: 3px solid #f9f9f9;
+}
+
+.sidebar-menu > button.has-border {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  margin-bottom: 1rem;
+}
+
+.sidebar-menu > button > i {
+  font-size: 25px;
+  color: #f9f9f9;
+  transition: all 0.4s;
+}
+
+.sidebar-menu > button:hover > i,
+.sidebar-menu > button:hover > span {
+  color: #bdbdbd;
+}
+
+.sidebar-menu > button > span {
+  color: #f9f9f9;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+body.open .sidebar-menu > button > span {
+  opacity: 1;
+  transition: all 0.4s;
+}
+
+.new-section {
+  height: 80vh;
+  width: 80vw;
+  transition: all 0.4s;
+  color: #f9f9f9;
+}
+
+.margin {
+  margin-left: 120px;
+  transition: all 0.4s;
+}
+
+.post-section {
+  background-color: var(--blackrussian);
+  opacity: 90%;
+  height: 872px;
+  width: 67%;
+  margin: auto;
+  overflow: auto;
+}
+
+.post-text {
+  height: 300px;
+  width: 1000px;
+  margin-left: 8px;
+}
+
+.border {
+  border-top: 5px solid var(--blackrock);
+  width: 1000px;
+  margin-left: none;
+}
+
+.text-sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.text-area {
+  background-color: var(--darkest);
+  border: none;
+  color: #eee;
+  text-align: left;
+  padding: 0px 0 90px 10px;
+  opacity: 40%;
+  font-size: 30px;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 18px;
+}
+
+.submit-btn {
+  background-color: #374151;
+  border: none;
+  color: #f9f9f9;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.user-name {
+  padding-top: 20px;
+  display: flex;
+  margin: 1px 0px 10px 8px;
+}
+
+.user-new-name {
+  font-size: 20px;
+  padding-left: 4px;
+}
+
+.name {
+  margin: 0px;
+  padding-top: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.usericon {
+  margin: auto;
+  font-size: 30px;
+  color: #111827;
+}
+
+.submit-btn:hover {
+  color: #eee;
+}
+
+.user-image {
+  background-color: #bdbdbd;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+}
+.updated-post {
+  margin-top: 18px;
+}
+
+.new-text {
+  display: block;
+}
+
+#time-update {
+  font-size: 12px;
+}
+
+.edit-delete {
+  width: 820px;
+  display: flex;
+  justify-content: end;
+}
+
+.btns {
+  color: #eee;
+  margin: 5px;
+  padding-top: 20px;
+}
+
+.btns:hover {
+  color: #bdbdbd;
+  opacity: 1;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="EN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Criminals Management</title>
+  </head>
+
+  <body>
+    <nav class="sidebar">
+      <div class="sidebar-inner">
+        <header class="sidebar-header">
+          <button type="button" class="sidebar-btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <img src="logo.png" alt="" class="sidebar-logo" />
+        </header>
+
+        <nav class="sidebar-menu">
+          <button type="button">
+            <i class="fa-solid fa-home"></i>
+            <span>Home</span>
+          </button>
+          <button type="button">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <span>Tasks</span>
+          </button>
+          <button type="button" class="has-border">
+            <i class="fa-solid fa-clipboard-check"></i>
+            <span>Projects</span>
+          </button>
+          <button type="button">
+            <i class="fa-solid fa-user"></i>
+            <span>User</span>
+          </button>
+          <button type="button" class="has-border">
+            <i class="fa-solid fa-gear"></i>
+            <span>Settings</span>
+          </button>
+        </nav>
+      </div>
+    </nav>
+
+    <div class="new-section margin">
+      <h1>Feed</h1>
+
+      <div class="post-section" id="main">
+        <div class="post-text">
+          <div class="user-name">
+            <span class="user-image"
+              ><i class="fa-solid fa-user usericon"></i
+            ></span>
+            <p class="user-new-name">Username</p>
+          </div>
+
+          <div class="text-sub">
+            <input
+              type="text"
+              placeholder="What's on your mind today?"
+              class="text-area"
+              id="text-section"
+            />
+            <input type="submit" value="Post" class="submit-btn" id="sub-btn" />
+          </div>
+        </div>
+
+        <div class="updated-post">
+          <!-- <div class="post-text">
+            <div class="user-name">
+              <span class="user-image"
+                ><i class="fa-solid fa-user usericon"></i
+              ></span>
+              <div class="new-text">
+                <p class="name">Username</p>
+                <p class="name" id="time-update">Updated at 12:50 pm</p>
+              </div>
+            </div>
+
+            <div class="text-sub">
+              <input
+                type="text"
+                placeholder="What was on your mind today?"
+                class="text-area"
+                id="text-section"
+                readonly
+              />
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/scripts.js"></script>
+  </body>
+</html>
